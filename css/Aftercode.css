@@ -6,7 +6,7 @@
 }
 :root {
   --main-color:	#5aafac ;
-  --section-backgroud: #ececec;
+  --section-backgroud: #f9fbfe;
   --main-transition: 0.3s;
   --main-padding-top: 100px;
   --main-padding-bottom: 100px;
@@ -68,6 +68,11 @@ ul {
 /* End Global Rules  */
 
 /* Satart Header  */
+@media (min-width: 1200px) {
+  .header .container {
+    width: 1650px;
+  }
+}
 .header {
   width: 100%;
   background-color: white;
@@ -102,8 +107,8 @@ ul {
 }
 .header .main-nav {
   display: flex;
-  padding-left: 220px;
-  padding-right: 130px;
+  /* padding-left: 220px; */
+  /* padding-right: 530px; */
 }
 .header .main-nav-1 {
   display: flex;
@@ -189,7 +194,7 @@ ul {
   left: 0;
 }
 /* Start Mega-menu  */
-.header .mega-menu {
+/* .header .mega-menu {
   position: absolute;
   width: 50%;
   left: 50%;
@@ -202,15 +207,15 @@ ul {
   top: calc(100% + 50px);
   opacity: 0;
   transition: top var(--main-transition), opacity var(--main-transition);
-}
-.header .mega-menu .links li {
+} */
+/* .header .mega-menu .links li {
   position: relative;
-}
+} */
 
-.header .mega-menu .links li:not(:last-child) {
+/* .header .mega-menu .links li:not(:last-child) {
   border-bottom: 1.7px solid #e9e6e6;
-}
-.header .mega-menu .links li::before {
+} */
+/* .header .mega-menu .links li::before {
   content: "";
   position: absolute;
   left: 0;
@@ -220,22 +225,22 @@ ul {
   background-color: #fafafa;
   z-index: -1;
   transition: var(--main-transition);
-}
-.header .mega-menu .links li:hover::before {
+} */
+/* .header .mega-menu .links li:hover::before {
   width: 100%;
-}
+} */
 /* .header .main-nav  li:nth-child(4):hover .mega-menu{
   opacity: 1;
   z-index: 100;
   top: calc(100% + 1px);
 } */
-.header .mega-menu .links li a {
+/* .header .mega-menu .links li a {
   color: var(--main-color);
   padding: 15px 15px 15px 0;
   display: block;
   font-size: 18px;
   font-weight: bold;
-}
+} */
 /* End Mega-menu  */
 /* End Header  */
 /* Start Landing */
@@ -469,7 +474,7 @@ ul {
 }
 .work-steps .image {
   max-width: 100%;
-  margin-right: 100px;
+  margin-right: 200px;
   margin-bottom: 100px;
 }
 .work-steps .info .box {
@@ -1437,10 +1442,10 @@ ul {
 /* End Discount */
 /* Start Login  */
 .login-body {
-  background: #a3e5de;
+  background: #64b9b7;
 }
 .login .content img {
-  margin: 100px 680px 50px;
+  margin: 60px 760px 50px;
 }
 .login .content .box p {
   font-size: 30px;
@@ -1499,10 +1504,16 @@ ul {
 /* End Login  */
 /* Start Try For Free  */
 .tryforfree-body {
-  background: #a3e5de;
+  background: #64b9b7;
 }
+
+/* .tryforfree .content img{
+  position: absolute;
+  margin: 0 auto;
+} */
+
 .tryforfree .content img {
-  margin: 60px 680px 50px;
+  margin: 60px 760px 50px;
 }
 .tryforfree .content .box .first-line {
   font-size: 30px;
@@ -1589,7 +1600,7 @@ ul {
   margin-right: 10px;
 }
 .footer .box .social li a {
-  background-color: #b0b0b0;
+  background-color: #bebebe;
   color: white;
   display: inline-flex;
   justify-content: center;
